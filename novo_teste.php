@@ -615,16 +615,16 @@ function triangulodavida($nome, $nomesocial, $nomecasado, $apelido)
 							$novonome1[] = $dadosNM[0];
 						}else{
 
-							// while (!empty($vldstrbs)) {
-							// 	$nomevld = $dadosNM[0];
-							// 	unset($dadosNM, $vldstrbs);
-							// 	$dadosNM = limpar_nome_1($nomevld, $retornoNM[0], $retornoNM[1], $retornoNM[2]);
-							// 	$seqNM1 = calculonome($dadosNM[0]);
-							// 	unset($retornoNM1);
-							// 	$retornoNM1 = gerartriangulo($seqNM1);
-							// 	$vldstrbs = str_matrix($retornoNM1[2]);
-							// 	echo $vldstrbs;
-							// }
+							while (!empty($vldstrbs)) {
+								$nomevld = $dadosNM[0];
+								unset($dadosNM, $vldstrbs);
+								$dadosNM = limpar_nome_1($nomevld, $retornoNM[0], $retornoNM[1], $retornoNM[2]);
+								$seqNM1 = calculonome($dadosNM[0]);
+								unset($retornoNM1);
+								$retornoNM1 = gerartriangulo($seqNM1);
+								$vldstrbs = str_matrix($retornoNM1[2]);
+								echo $vldstrbs;
+							}
 						}
 						
 						// if (empty($str_matrix_NM2)) {
